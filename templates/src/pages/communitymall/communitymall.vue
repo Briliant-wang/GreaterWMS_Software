@@ -15,7 +15,7 @@
         </div>
       </div>
     </template>
-    <div class="main-table">
+    <div class="main-table3">
       <router-view />
     </div>
   </q-page>

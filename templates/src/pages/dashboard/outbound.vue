@@ -1,17 +1,17 @@
 <template>
-<q-card class="shadow-11" :style={height:height}>
-  <q-card-section>
-    <div class="text-h6 text-grey-8 text-weight-bolder">
-      Bar Chart
-      <q-select outlined v-model="selected_product"
-                class="bg-white float-right q-mb-sm " style="width:300px;"
-                :options="product_options" label="Select Product"/>
-    </div>
-  </q-card-section>
-  <q-card-section class="q-pa-none">
-    <IEcharts :option="getBarChartOptions" :resizable="true" style="height: 600px; width: 100%"/>
-  </q-card-section>
-</q-card>
+  <q-card class="shadow-11" :style={height:height}>
+    <q-card-section>
+      <div class="text-h6 text-grey-8 text-weight-bolder">
+        {{selected_product + $t('index.chart')}}
+        <q-select outlined v-model="selected_product"
+                  class="bg-white float-right q-mb-sm " style="width:300px;"
+                  :options="product_options" label="Select Product"/>
+      </div>
+    </q-card-section>
+    <q-card-section class="q-pa-none">
+      <IEcharts :option="getBarChartOptions" :resizable="true" style="height: 600px; width: 100%"/>
+    </q-card-section>
+  </q-card>
 </template>
 
 <script>

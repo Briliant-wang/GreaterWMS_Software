@@ -2,7 +2,7 @@
   <q-card class="shadow-11" :style={height:height}>
     <q-card-section>
       <div class="text-h6 text-grey-8 text-weight-bolder">
-        Bar Chart
+        {{selected_product + $t('index.chart')}}
         <q-select outlined v-model="selected_product"
                   class="bg-white float-right q-mb-sm " style="width:300px;"
                   :options="product_options" label="Select Product"/>
