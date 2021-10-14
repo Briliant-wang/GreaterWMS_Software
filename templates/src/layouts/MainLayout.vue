@@ -299,6 +299,8 @@
             </q-item-section>
             <q-item-section>
               {{ $t('community_mall.communitymall') }}
+            </q-item-section>
+          </q-item>
           <q-separator v-show="$q.platform.is.desktop"/>
           <q-item v-show="$q.localStorage.getItem('staff_type') !== 'Supplier' &&
                           $q.localStorage.getItem('staff_type') !== 'Supervisor' &&
