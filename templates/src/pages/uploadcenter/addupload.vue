@@ -13,7 +13,7 @@
           <div class="q-pa-md">
             <div>
               <div class="row">
-                <q-btn-group style="margin-left: 17px">
+                <q-btn-group>
                   <q-btn :label="$t('upload_center.downloadgoodstemplate')" icon="cloud_download" @click="downloadgoodstemplate()">
                     <q-tooltip content-class="bg-amber text-black shadow-4" :offset="[10, 10]" content-style="font-size: 12px">
                       {{ $t('upload_center.downloadgoodstemplate') }}
@@ -103,11 +103,11 @@ export default {
       height: '',
       token: LocalStorage.getItem('openid'),
       lang: LocalStorage.getItem('lang'),
-      capitalfile_pathname: baseurl + 'uploadfile/capitalfile/',
-      customerfile_pathname: baseurl + 'uploadfile/customerfile/',
-      freightfile_pathname: baseurl + 'uploadfile/freightfile/',
-      goodslistfile_pathname: baseurl + 'uploadfile/goodslistfile/',
-      supplierfile_pathname: baseurl + 'uploadfile/supplierfile/'
+      capitalfile_pathname: baseurl + 'uploadfile/capitalfileadd/',
+      customerfile_pathname: baseurl + 'uploadfile/customerfileadd/',
+      freightfile_pathname: baseurl + 'uploadfile/freightfileadd/',
+      goodslistfile_pathname: baseurl + 'uploadfile/goodslistfileadd/',
+      supplierfile_pathname: baseurl + 'uploadfile/supplierfileadd/'
     }
   },
   methods: {
