@@ -198,7 +198,24 @@ export default {
     addupload: 'アップロード'
   },
   community_mall: {
-    communitymall: 'コミュニティ'
+    communitymall: 'コミュニティ',
+    cm: {
+      buySoftware: 'ソフトを買う',
+      userlevel: 'ユーザレベル',
+      receivingvolume: '受入量（条）',
+      deliveringamount: '出荷量（条）',
+      users: '使用人数',
+      useequipment: '使用設備（台）',
+      purchasemethod: '買い方',
+      basicuser: 'ベースユーザ',
+      limitedusers: '限定ユーザー',
+      unlimitedusers: '無限ユーザ',
+      unlimited: '制限なし',
+      noneedtobuy: '買う必要がない'
+    },
+    equipment: {
+      buyequipment: '設備を買う'
+    }
   },
   goods: {
     goods_list: '製品リスト',

@@ -196,7 +196,24 @@ export default {
     addupload: 'Add Upload'
   },
   community_mall: {
-    communitymall: 'Community Mall'
+    communitymall: 'Community Mall',
+      cm: {
+        buySoftware: 'Buy Software',
+        userlevel: 'User Level',
+        receivingvolume: 'Receiving Volume (bar)',
+        deliveringamount: 'Delivering Amount (bar)',
+        users: 'Users',
+        useequipment: 'Use Equipment（piece）',
+        purchasemethod: 'Purchase Method',
+        basicuser: 'Basic User',
+        limitedusers: 'Limited Users',
+        unlimitedusers: 'unlimited Users',
+        unlimited: 'Unlimited',
+        noneedtobuy: 'No Need To Buy'
+      },
+      equipment: {
+        buyequipment: 'Buy Equipment'
+      }
   },
   goods: {
     goods_list: 'Goods List',

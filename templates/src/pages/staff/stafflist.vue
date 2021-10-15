@@ -93,7 +93,7 @@
                {{ props.row.update_time }}
              </q-td>
              <template v-if="!editMode">
-               <q-td key="action" :props="props" style="width: 240px">
+               <q-td key="action" :props="props" style="width: 100px">
                  <q-btn v-show="$q.localStorage.getItem('staff_type') !== 'Supplier' &&
                                 $q.localStorage.getItem('staff_type') !== 'Customer' &&
                                 $q.localStorage.getItem('staff_type') !== 'Inbound' &&
@@ -116,11 +116,11 @@
                     {{ $t('delete') }}
                   </q-tooltip>
                  </q-btn>
-                 <q-btn color="teal" :label="$t('contact')" icon="contacts" @click="ChatWith(props.row.staff_name)">
-                   <q-tooltip content-class="bg-amber text-black shadow-4" :offset="[10, 10]" content-style="font-size: 12px">
-                    {{ $t('sendmessage') }}
-                  </q-tooltip>
-                 </q-btn>
+<!--                 <q-btn color="teal" :label="$t('contact')" icon="contacts" @click="ChatWith(props.row.staff_name)">-->
+<!--                   <q-tooltip content-class="bg-amber text-black shadow-4" :offset="[10, 10]" content-style="font-size: 12px">-->
+<!--                    {{ $t('sendmessage') }}-->
+<!--                  </q-tooltip>-->
+<!--                 </q-btn>-->
                </q-td>
                </template>
              <template v-else-if="editMode">

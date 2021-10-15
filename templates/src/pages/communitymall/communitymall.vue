@@ -9,8 +9,13 @@
             <transition appear enter-active-class="animated zoomIn">
               <q-route-tab v-show="$q.localStorage.getItem('staff_type') !== 'Supplier' &&
                           $q.localStorage.getItem('staff_type') !== 'Customer'
-                         " name="cm" :label="$t('community_mall.communitymall')" icon="img:statics/communitymall/cm.png" to="/communitymall/cm" exact/>
+                         " name="cm" :label="$t('community_mall.cm.buySoftware')" icon="img:statics/communitymall/cm.png" to="/communitymall/cm" exact/>
             </transition>
+<!--            <transition appear enter-active-class="animated zoomIn">-->
+<!--              <q-route-tab v-show="$q.localStorage.getItem('staff_type') !== 'Supplier' &&-->
+<!--                          $q.localStorage.getItem('staff_type') !== 'Customer'-->
+<!--                         " name="equipment" :label="$t('community_mall.equipment.buyequipment')" icon="img:statics/communitymall/equipment.png" to="/communitymall/equipment" exact/>-->
+<!--            </transition>-->
           </q-tabs>
         </div>
       </div>

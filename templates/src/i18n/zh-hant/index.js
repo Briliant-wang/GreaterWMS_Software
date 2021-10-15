@@ -198,7 +198,24 @@ export default {
     addupload: '新增上傳'
   },
   community_mall: {
-    communitymall: '社區商城'
+    communitymall: '社區商城',
+    cm: {
+      buySoftware:'購買軟件',
+      userlevel: '用戶等級',
+      receivingvolume: '收貨量（條）',
+      deliveringamount: '發貨量（條）',
+      users: '使用人數',
+      useequipment: '使用設備 （台）',
+      purchasemethod: '購買方式',
+      basicuser: '基礎用戶',
+      limitedusers: '限量用戶',
+      unlimitedusers: '無限量用戶',
+      unlimited: '無限制',
+      noneedtobuy: '無需購買'
+    },
+    equipment: {
+      buyequipment:'購買設備'
+    }
   },
   goods: {
     goods_list: '商品列表',
