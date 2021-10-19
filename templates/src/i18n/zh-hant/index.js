@@ -200,7 +200,7 @@ export default {
   community_mall: {
     communitymall: '社區商城',
     cm: {
-      buySoftware:'購買軟件',
+      buySoftware: '購買軟件',
       userlevel: '用戶等級',
       receivingvolume: '收貨量（條）',
       deliveringamount: '發貨量（條）',
@@ -214,7 +214,7 @@ export default {
       noneedtobuy: '無需購買'
     },
     equipment: {
-      buyequipment:'購買設備'
+      buyequipment: '購買設備'
     }
   },
   goods: {
@@ -400,7 +400,11 @@ export default {
     scan_sorting: '分揀',
     scan_uptobin: '上架',
     scan_picking: '揀貨',
-    scan_shipping: '發貨',
+    scan_shipping: '裝車發貨',
+    scan_movetobin: '移庫',
+    scan_inventory: '盤點',
+    scan_goodsquery: '貨物查詢',
+    scan_locationquery: '庫位查詢',
     view_binmove: {
       goods_code: '產品名稱',
       onhand_stock: '現有庫存',

@@ -197,23 +197,23 @@ export default {
   },
   community_mall: {
     communitymall: 'Community Mall',
-      cm: {
-        buySoftware: 'Buy Software',
-        userlevel: 'User Level',
-        receivingvolume: 'Receiving Volume (bar)',
-        deliveringamount: 'Delivering Amount (bar)',
-        users: 'Users',
-        useequipment: 'Use Equipment（piece）',
-        purchasemethod: 'Purchase Method',
-        basicuser: 'Basic User',
-        limitedusers: 'Limited Users',
-        unlimitedusers: 'unlimited Users',
-        unlimited: 'Unlimited',
-        noneedtobuy: 'No Need To Buy'
-      },
-      equipment: {
-        buyequipment: 'Buy Equipment'
-      }
+    cm: {
+      buySoftware: 'Buy Software',
+      userlevel: 'User Level',
+      receivingvolume: 'Receiving Volume (bar)',
+      deliveringamount: 'Delivering Amount (bar)',
+      users: 'Users',
+      useequipment: 'Use Equipment（piece）',
+      purchasemethod: 'Purchase Method',
+      basicuser: 'Basic User',
+      limitedusers: 'Limited Users',
+      unlimitedusers: 'unlimited Users',
+      unlimited: 'Unlimited',
+      noneedtobuy: 'No Need To Buy'
+    },
+    equipment: {
+      buyequipment: 'Buy Equipment'
+    }
   },
   goods: {
     goods_list: 'Goods List',
@@ -399,6 +399,10 @@ export default {
     scan_uptobin: 'Up To Bin',
     scan_picking: 'Picking',
     scan_shipping: 'Dispatch',
+    scan_movetobin: 'Move To Bin',
+    scan_inventory: 'Inventory',
+    scan_goodsquery: 'Goods Query',
+    scan_locationquery: 'Location Query',
     view_binmove: {
       goods_code: 'Goods Code',
       onhand_stock: 'OnHand Stock',

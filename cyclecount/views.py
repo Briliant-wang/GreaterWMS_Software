@@ -50,9 +50,11 @@ class CyclecountModeDayViewSet(viewsets.ModelViewSet):
         id = self.get_project()
         if self.request.user:
             if id is None:
-                return CyclecountModeDayModel.objects.filter(openid=self.request.auth.openid)
+                return CyclecountModeDayModel.objects.filter(openid=self.request.auth.openid,
+                                                             create_time__gte=timezone.now().date())
             else:
-                return CyclecountModeDayModel.objects.filter(openid=self.request.auth.openid, id=id)
+                return CyclecountModeDayModel.objects.filter(openid=self.request.auth.openid,
+                                                             id=id)
         else:
             return CyclecountModeDayModel.objects.none()
 
@@ -71,7 +73,6 @@ class CyclecountModeDayViewSet(viewsets.ModelViewSet):
     def create(self, request, *args, **kwargs):
         data = self.request.data
         data['openid'] = self.request.auth.openid
-        print(timezone.now())
         if CyclecountModeDayModel.objects.filter(openid=data['openid']).exists():
             raise APIException({"detail": "Data exists"})
         else:

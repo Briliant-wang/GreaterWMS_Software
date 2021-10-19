@@ -431,18 +431,6 @@ const routes = [
         ]
       },
       {
-        path: 'downloadcenter',
-        name: 'downloadcenter',
-        component: () => import('pages/downloadcenter/download.vue'),
-        children: [
-          {
-            path: 'downloadinbound',
-            name: 'downloadinbound',
-            component: () => import('pages/downloadcenter/downloadinbound')
-          }
-        ]
-      },
-      {
         path: 'communitymall',
         name: 'communitymall',
         component: () => import('pages/communitymall/communitymall.vue'),

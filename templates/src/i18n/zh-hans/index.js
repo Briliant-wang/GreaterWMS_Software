@@ -216,10 +216,10 @@ export default {
       limitedusers: '限量用户',
       unlimitedusers: '无限量用户',
       unlimited: '无限制',
-      noneedtobuy: '无需购买',
+      noneedtobuy: '无需购买'
     },
     equipment: {
-      buyequipment:'购买设备'
+      buyequipment: '购买设备'
     }
   },
   goods: {
@@ -405,7 +405,11 @@ export default {
     scan_sorting: '分拣',
     scan_uptobin: '上架',
     scan_picking: '拣货',
-    scan_shipping: '发货',
+    scan_shipping: '装车发货',
+    scan_movetobin: '移库',
+    scan_inventory: '盘点',
+    scan_goodsquery: '货物查询',
+    scan_locationquery: '库位查询',
     view_binmove: {
       goods_code: '产品名称',
       onhand_stock: '现有库存',
