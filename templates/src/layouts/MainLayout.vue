@@ -16,22 +16,6 @@
         </transition>
         <q-space />
         <transition appear enter-active-class="animated zoomIn">
-          <a v-show="device !== 2 && device !== 1 &&!$q.platform.is.electron" href="/docs/" style="text-decoration:none; color: #c8e6c9">
-            <q-btn icon="api" round dense flat style="margin: 0 10px 0 10px">
-              <q-tooltip content-class="bg-amber text-black shadow-4" :offset="[15, 15]" content-style="font-size: 12px">
-                {{ $t('index.api') }}
-              </q-tooltip>
-            </q-btn>
-          </a>
-        </transition>
-        <transition appear enter-active-class="animated zoomIn">
-          <q-btn v-show="device === 0 &&!$q.platform.is.electron" icon="img:statics/icons/GitHub.png" round dense flat @click="brownlink('https://github.com/Singosgu/GreaterWMS')" style="margin: 0 10px 0 10px">
-            <q-tooltip content-class="bg-amber text-black shadow-4" :offset="[15, 15]" content-style="font-size: 12px">
-              GitHub Link
-            </q-tooltip>
-          </q-btn>
-        </transition>
-        <transition appear enter-active-class="animated zoomIn">
           <q-btn round dense flat color="white" icon="translate" style="margin: 0 10px 0 10px">
             <q-tooltip content-class="bg-amber text-black shadow-4" :offset="[15, 15]" content-style="font-size: 12px">
               {{ $t('index.translate') }}
@@ -48,16 +32,6 @@
         <q-separator vertical />
         <template v-if="authin === '1'">
         <transition appear enter-active-class="animated zoomIn">
-          <q-btn round dense flat color="white" icon="notifications" @click="read = true" style="margin: 0 10px 0 10px">
-            <q-badge v-if="read_num" color="red" text-color="white" floating>
-              {{ read_num }}
-            </q-badge>
-            <q-tooltip content-class="bg-amber text-black shadow-4" :offset="[15, 15]" content-style="font-size: 12px">
-                {{ $t('index.unread') }}
-            </q-tooltip>
-          </q-btn>
-        </transition>
-        <transition appear enter-active-class="animated zoomIn">
           <q-btn-dropdown stretch flat color="white-8" icon="account_circle" @click="chat = false">
             <div class="row no-wrap q-pa-md">
               <div class="column" style="width: 200px">
@@ -72,11 +46,6 @@
                   <q-btn flat rounded class="full-width" align="left" icon="list" :label="$t('index.view_my_openid')" @click="authid = true">
                       <q-tooltip content-class="bg-amber text-black shadow-4" :offset="[10, 10]" content-style="font-size: 12px">
                           {{ $t('index.view_my_openid') }}
-                      </q-tooltip>
-                  </q-btn>
-                  <q-btn flat rounded class="full-width" align="left" icon="img:statics/icons/profile.png" :label="$t('index.contact_list')" @click="Friend()">
-                      <q-tooltip content-class="bg-amber text-black shadow-4" :offset="[10, 10]" content-style="font-size: 12px">
-                          {{ $t('index.contact_list') }}
                       </q-tooltip>
                   </q-btn>
                   <q-btn v-show="$q.platform.is.cordova || $q.platform.is.mobile" flat rounded class="full-width" align="left" icon="logout" :label="$t('index.logout')" @click="Logout()">
@@ -771,7 +740,7 @@ export default {
       updateNow: false,
       processpercent: 0,
       downloadprocess: false,
-      container_height: '',
+      container_height: this.$q.screen.height + '' + 'px',
       langOptions: [
         { value: 'en-us', label: 'English' },
         { value: 'zh-hans', label: '中文简体' },
@@ -1234,11 +1203,6 @@ export default {
   },
   created () {
     var _this = this
-    if (_this.$q.platform.is.cordova || _this.$q.platform.is.mobile) {
-      _this.container_height = _this.$q.screen.height - 90 + '' + 'px'
-    } else {
-      _this.container_height = _this.$q.screen.height
-    }
     if (_this.$q.localStorage.has('openid')) {
       _this.openid = _this.$q.localStorage.getItem('openid')
     } else {

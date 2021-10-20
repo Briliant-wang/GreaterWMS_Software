@@ -2,197 +2,261 @@
   <div>
     <transition appear enter-active-class="animated fadeIn">
       <q-table
-        class="my-sticky-header-table shadow-24"
-        :data="data"
-        row-key="name"
-        :separator="separator"
-        :loading="loading"
-        :filter="filter"
-        :columns="columns"
-        hide-bottom
-        :pagination.sync="pagination"
-        no-data-label="No data"
-        no-results-label="No data you want"
-        :table-style="{ height: height }"
+        class="my-sticky-header-column-table shadow-24"
+        row-key="id"
         flat
-        bordered
+        hide-bottom
       >
-<!--        <template v-slot:body="props">-->
-<!--          <q-tr props="props">-->
-<!--            <q-td key="" props="props">-->
-<!--              {{props.row.userlevel}}-->
-<!--            </q-td>-->
-<!--            <q-td key="" props="props">-->
-<!--              {{ props.row.receivingvolume }}-->
-<!--            </q-td>-->
-<!--            <q-td key="" props="props">-->
-<!--              {{ props.row.deliveringamount }}-->
-<!--            </q-td>-->
-<!--            <q-td key="" props="props">-->
-<!--              {{ props.row.users }}-->
-<!--            </q-td>-->
-<!--            <q-td key="" props="props">-->
-<!--              {{ props.row.useequipment }}-->
-<!--            </q-td>-->
-<!--            <q-td key="" props="props">-->
-<!--              {{ props.row.purchasemethod }}-->
-<!--            </q-td>-->
-<!--          </q-tr>-->
-<!--        </template>-->
+        <template v-slot:top >
+          <q-card flat :style="{height:height}">
+            <q-card-section horizontal :style="{width:width}" style="height:80px; background-color: #4C5875;font-size: 16px">
+              <q-card-actions class="col-2" align="center">
+                <div>
+                  <p style="color: white;margin: 0;padding: 0">
+                    {{$t('community_mall.cm.userlevel')}}
+                  </p>
+                </div>
+              </q-card-actions>
+              <q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>
+                  <p style="color: white;margin: 0;padding: 0">
+                    {{$t('community_mall.cm.receivingvolume')}}
+                  </p>
+                </div>
+              </q-card-actions>
+              <q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>
+                  <p style="color: white;margin: 0;padding: 0">
+                    {{$t('community_mall.cm.deliveringamount')}}
+                  </p>
+                </div>
+              </q-card-actions>
+              <q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>
+                  <p style="color: white;margin: 0;padding: 0">
+                    {{$t('community_mall.cm.users')}}
+                  </p>
+                </div>
+              </q-card-actions>
+              <q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>
+                  <p style="color: white;margin: 0;padding: 0">
+                    {{$t('community_mall.cm.useequipment')}}
+                  </p>
+                </div>
+              </q-card-actions>
+              <q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>
+                  <p style="color: white;margin: 0;padding: 0">
+                    {{$t('community_mall.cm.purchasemethod')}}
+                  </p>
+                </div>
+              </q-card-actions>
+            </q-card-section>
+            <q-separator></q-separator>
+            <!--            第二行-->
+            <q-card-section horizontal style="height: 200px;font-size: 16px">
+              <q-card-actions class="col-2" align="center" style="background-color: #DBDEE3">
+                <div>{{$t('community_mall.cm.basicuser')}}</div>
+              </q-card-actions>
+              <q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>100</div>
+              </q-card-actions>
+              <q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>100</div>
+              </q-card-actions>
+              <q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>{{$t('community_mall.cm.unlimited')}}</div>
+              </q-card-actions>
+              <q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>{{$t('community_mall.cm.unlimited')}}</div>
+              </q-card-actions>
+              <q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>{{$t('community_mall.cm.noneedtobuy')}}</div>
+              </q-card-actions>
+            </q-card-section>
+            <q-separator></q-separator>
+            <!--            第三行-->
+            <q-card-section horizontal style="height: 200px;font-size: 16px">
+              <q-card-actions class="col-2" align="center" style="background-color: #DBDEE3">
+                <div>{{$t('community_mall.cm.limitedusers')}}</div>
+              </q-card-actions>
+              <q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>1000</div>
+              </q-card-actions><q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>1000</div>
+              </q-card-actions><q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>{{$t('community_mall.cm.unlimited')}}</div>
+              </q-card-actions><q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>{{$t('community_mall.cm.unlimited')}}</div>
+              </q-card-actions>
+              <q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <q-btn color="red" style="width: 140px;height: 48px;font-size: 16px" @click="payFrom1 = true">
+                  {{$t('community_mall.cm.buynow')}}
+                </q-btn>
+              </q-card-actions>
+            </q-card-section>
+            <q-separator></q-separator>
+            <q-card-section horizontal style="height: 200px;font-size: 16px">
+              <q-card-actions class="col-2" align="center" style="background-color: #DBDEE3">
+                <div>{{$t('community_mall.cm.unlimitedusers')}}</div>
+              </q-card-actions>
+              <q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>{{$t('community_mall.cm.unlimited')}}</div>
+              </q-card-actions><q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>{{$t('community_mall.cm.unlimited')}}</div>
+              </q-card-actions><q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>{{$t('community_mall.cm.unlimited')}}</div>
+              </q-card-actions><q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <div>{{$t('community_mall.cm.unlimited')}}</div>
+              </q-card-actions>
+              <q-separator vertical></q-separator>
+              <q-card-actions class="col-2" align="center">
+                <q-btn color="red" style="width: 140px;height: 48px;font-size: 16px" @click="payFrom2 = true">
+                  {{$t('community_mall.cm.buynow')}}
+                </q-btn>
+              </q-card-actions>
+            </q-card-section>
+            <q-separator></q-separator>
+          </q-card>
+        </template>
       </q-table>
     </transition>
+    <q-dialog v-model="payFrom1">
+      <q-card>
+        <q-card-section style="width: 600px;height: 60px;background-color: #4C5875">
+          <q-card-actions align="center">
+            <p style="color: white;margin: 0;padding: 0;font-size: 20px">
+              {{$t('community_mall.cm.buynow')}}
+            </p>
+          </q-card-actions>
+        </q-card-section>
+        <q-separator vertical></q-separator>
+        <q-card-section style="height: 300px">
+          <table>
+            <tr>
+              <td style="font-size: 18px;padding-top: 40px;padding-left: 40px" >
+                {{ $t('community_mall.cm.purchasecontent') }}
+              </td>
+              <td style="font-size: 18px;padding-left: 10px;padding-top: 40px">
+                {{ $t('community_mall.cm.lul') + $t('community_mall.cm.rasv') }}
+              </td>
+            </tr>
+            <tr>
+              <td style="font-size: 18px; padding-top: 40px; padding-left: 40px">
+                {{ $t('community_mall.cm.paymentamount') }}
+              </td>
+              <td style="font-size: 18px; padding-left: 10px;padding-top: 40px; color: red">
+                ￥1000
+              </td>
+            </tr>
+            <tr>
+              <td style="font-size: 18px;padding-top: 40px; padding-left: 40px">
+                {{ $t('community_mall.cm.paymentmethods') }}
+              </td>
+              <td style="font-size: 18px; padding-left: 10px; padding-top: 40px">
+                <q-btn style="background-color: #2255B4" @click="pay = true">
+                  <img src="/statics/communitymall/paypal.png">
+                </q-btn>
+              </td>
+            </tr>
+          </table>
+        </q-card-section>
+      </q-card>
+    </q-dialog>
+    <q-dialog v-model="payFrom2">
+      <q-card>
+        <q-card-section style="width: 600px;height: 60px;background-color: #4C5875">
+          <q-card-actions align="center">
+            <p style="color: white;margin: 0;padding: 0;font-size: 20px">
+              {{$t('community_mall.cm.buynow')}}
+            </p>
+          </q-card-actions>
+        </q-card-section>
+        <q-separator vertical></q-separator>
+        <q-card-section style="height: 300px">
+          <table>
+            <tr>
+              <td style="font-size: 18px;padding-top: 40px;padding-left: 40px" >
+                {{ $t('community_mall.cm.purchasecontent') }}
+              </td>
+              <td style="font-size: 18px;padding-left: 10px;padding-top: 40px">
+                {{ $t('community_mall.cm.ulul') + $t('community_mall.cm.unlimiteds') }}
+              </td>
+            </tr>
+            <tr>
+              <td style="font-size: 18px; padding-top: 40px; padding-left: 40px">
+                {{ $t('community_mall.cm.paymentamount') }}
+              </td>
+              <td style="font-size: 18px; padding-left: 10px;padding-top: 40px; color: red">
+                ￥5000
+              </td>
+            </tr>
+            <tr>
+              <td style="font-size: 18px;padding-top: 40px; padding-left: 40px">
+                {{ $t('community_mall.cm.paymentmethods') }}
+              </td>
+              <td style="font-size: 18px; padding-left: 10px; padding-top: 40px">
+                <q-btn style="background-color: #2255B4" @click="open">
+                  <img src="/statics/communitymall/paypal.png">
+                </q-btn>
+              </td>
+            </tr>
+          </table>
+        </q-card-section>
+      </q-card>
+    </q-dialog>
   </div>
 </template>
 <router-view />
-
 <script>
-import { getauth } from 'boot/axios_request'
-import { LocalStorage } from 'quasar'
 
 export default {
-  name: 'Pagebinproperty',
+  name: 'equipment',
   data () {
     return {
-      openid: '',
-      login_name: '',
-      authin: '0',
-      pathname: 'binproperty/',
-      pathname_previous: '',
-      pathname_next: '',
-      separator: 'cell',
-      loading: false,
       height: '',
-      table_list: [],
-      columns: [
-        { name: 'userlevel',
-          required: true,
-          label: this.$t('community_mall.cm.userlevel'),
-          field: row => row.name, align: 'center',
-          style:'height:200px;background:#DBDEE3'},
-        { name: 'receivingvolume', label: this.$t('community_mall.cm.receivingvolume'), field: 'receivingvolume', align: 'center' },
-        { name: 'deliveringamount', label: this.$t('community_mall.cm.deliveringamount'),field: 'deliveringamount', align: 'center' },
-        { name: 'users', label: this.$t('community_mall.cm.users'), field:'users', align: 'center' },
-        { name: 'useequipment', label: this.$t('community_mall.cm.useequipment'), field:'useequipment', align: 'center' },
-        { name: 'purchasemethod', label: this.$t('community_mall.cm.purchasemethod'), field:'purchasemethod', align: 'center' },
-      ],
-      data:[
-        {
-          name:this.$t('community_mall.cm.basicuser'),
-          receivingvolume: 100,
-          deliveringamount: 100,
-          users: this.$t('community_mall.cm.unlimited'),
-          useequipment: this.$t('community_mall.cm.unlimited'),
-          purchasemethod:this.$t('community_mall.cm.noneedtobuy')
-        },
-        {
-          name:this.$t('community_mall.cm.limitedusers'),
-          receivingvolume: 1000,
-          deliveringamount: 1000,
-          users: this.$t('community_mall.cm.unlimited'),
-          useequipment: this.$t('community_mall.cm.unlimited'),
-        },
-        {
-          name:this.$t('community_mall.cm.limitedusers'),
-          receivingvolume: this.$t('community_mall.cm.unlimited'),
-          deliveringamount: this.$t('community_mall.cm.unlimited'),
-          users: this.$t('community_mall.cm.unlimited'),
-          useequipment:this.$t('community_mall.cm.unlimited'),
-        }
-      ],
-      filter: '',
-      pagination: {
-        page: 1,
-        rowsPerPage: '30'
-      }
+      width: '100%',
+      payFrom1: false,
+      payFrom2: false,
+      payFrom3: false
     }
   },
   methods: {
-    getList () {
-      var _this = this
-      if (LocalStorage.has('auth')) {
-        getauth(_this.pathname, {
-        }).then(res => {
-          _this.table_list = res.results
-          _this.pathname_previous = res.previous
-          _this.pathname_next = res.next
-        }).catch(err => {
-          _this.$q.notify({
-            message: err.detail,
-            icon: 'close',
-            color: 'negative'
-          })
-        })
-      } else {
-      }
-    },
-    getListPrevious () {
-      var _this = this
-      if (LocalStorage.has('auth')) {
-        getauth(_this.pathname_previous, {
-        }).then(res => {
-          _this.table_list = res.results
-          _this.pathname_previous = res.previous
-          _this.pathname_next = res.next
-        }).catch(err => {
-          _this.$q.notify({
-            message: err.detail,
-            icon: 'close',
-            color: 'negative'
-          })
-        })
-      } else {
-      }
-    },
-    getListNext () {
-      var _this = this
-      if (LocalStorage.has('auth')) {
-        getauth(_this.pathname_next, {
-        }).then(res => {
-          _this.table_list = res.results
-          _this.pathname_previous = res.previous
-          _this.pathname_next = res.next
-        }).catch(err => {
-          _this.$q.notify({
-            message: err.detail,
-            icon: 'close',
-            color: 'negative'
-          })
-        })
-      } else {
-      }
-    },
-    reFresh () {
-      var _this = this
-      _this.getList()
-    }
-  },
-  created () {
-    var _this = this
-    if (LocalStorage.has('openid')) {
-      _this.openid = LocalStorage.getItem('openid')
-    } else {
-      _this.openid = ''
-      LocalStorage.set('openid', '')
-    }
-    if (LocalStorage.has('login_name')) {
-      _this.login_name = LocalStorage.getItem('login_name')
-    } else {
-      _this.login_name = ''
-      LocalStorage.set('login_name', '')
-    }
-    if (LocalStorage.has('auth')) {
-      _this.authin = '1'
-      _this.getList()
-    } else {
-      _this.authin = '0'
+    open () {
+      window.open('https://www.56yhz.com/')
     }
   },
   mounted () {
     var _this = this
     if (_this.$q.platform.is.electron) {
-      _this.height = String(_this.$q.screen.height - 290) + 'px'
+      _this.height = String(_this.$q.screen.height - 230) + 'px'
     } else {
-      _this.height = _this.$q.screen.height - 290 + '' + 'px'
+      _this.height = _this.$q.screen.height - 230 + '' + 'px'
+    }
+    if (_this.$q.platform.is.electron) {
+      _this.width = String(_this.$q.screen.width - 250) + 'px'
+    } else {
+      _this.width = _this.$q.screen.width - 250 + '' + 'px'
     }
   },
   updated () {

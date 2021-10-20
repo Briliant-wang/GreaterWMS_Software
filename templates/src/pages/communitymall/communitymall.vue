@@ -4,7 +4,6 @@
       <div class="q-pa-md">
         <div class="q-gutter-y-md" style="max-width: 100%">
           <q-tabs
-            v-model="detaillink"
           >
             <transition appear enter-active-class="animated zoomIn">
               <q-route-tab v-show="$q.localStorage.getItem('staff_type') !== 'Supplier' &&
