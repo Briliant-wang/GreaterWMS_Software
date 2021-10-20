@@ -211,7 +211,18 @@ export default {
       limitedusers: '限定ユーザー',
       unlimitedusers: '無限ユーザ',
       unlimited: '制限なし',
-      noneedtobuy: '買う必要がない'
+      noneedtobuy: '買う必要がない',
+      buynow: '即座に買う',
+      purchasecontent: '購入内容：',
+      lul: '制限ユーザレベル',
+      ulul: '無制限ユーザレベル',
+      rasv: '（出荷量:1000条）',
+      paymentamount: '支払い金額：',
+      paymentmethods: '支払い方法：',
+      unlimiteds: '(制限なし)',
+      wechat: 'WeChat',
+      alipay: 'Alipay',
+      paypal: 'PayPal'
     },
     equipment: {
       buyequipment: '設備を買う'

@@ -207,9 +207,20 @@ export default {
       purchasemethod: 'Purchase Method',
       basicuser: 'Basic User',
       limitedusers: 'Limited Users',
-      unlimitedusers: 'unlimited Users',
+      unlimitedusers: 'Unlimited Users',
       unlimited: 'Unlimited',
-      noneedtobuy: 'No Need To Buy'
+      noneedtobuy: 'Free',
+      buynow: 'Buy Now',
+      purchasecontent: 'Purchase Content：',
+      lul: 'Limited User Level',
+      ulul: 'Unlimited User Level',
+      rasv: '（Receipt and shipment volume:1000 bar）',
+      paymentamount: 'Payment Amount：',
+      paymentmethods: 'Payment Methods：',
+      unlimiteds: '（unlimited）',
+      wechat: 'WeChat',
+      alipay: 'Alipay',
+      paypal: 'PayPal'
     },
     equipment: {
       buyequipment: 'Buy Equipment'

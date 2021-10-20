@@ -211,7 +211,18 @@ export default {
       limitedusers: '限量用戶',
       unlimitedusers: '無限量用戶',
       unlimited: '無限制',
-      noneedtobuy: '無需購買'
+      noneedtobuy: '無需購買',
+      buynow: '立即購買',
+      purchasecontent: '購買内容：',
+      lul: '限量用戶等級',
+      ulul: '無限量用戶等級',
+      rasv: '（收發貨量:1000條）',
+      paymentamount: '支付金額：',
+      paymentmethods: '支付方式：',
+      unlimiteds: '（無限制）',
+      wechat: '微信',
+      alipay: '支付宝',
+      paypal: 'PayPal'
     },
     equipment: {
       buyequipment: '購買設備'
