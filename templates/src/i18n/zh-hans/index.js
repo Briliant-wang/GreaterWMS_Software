@@ -230,7 +230,12 @@ export default {
       paypal: 'PayPal'
     },
     equipment: {
-      buyequipment: '购买设备'
+      buyequipment: '购买设备',
+      price: '价格',
+      details: '查看详情 >',
+      salesvolume: '销量:',
+      quantity: '数量: ',
+      addtocart: '加入购物车'
     }
   },
   goods: {

@@ -262,7 +262,7 @@
                   v-if="$q.platform.is.desktop"
                   clickable to="/communitymall/cm" @click="linkChange('communitymall')" v-ripple exact :active="link === 'communitymall'" :class="{ 'my-menu-link': link === 'communitymall' }">
             <q-item-section avatar>
-              <q-icon name="img:statics/communitymall/communitymall.png" />
+              <q-icon name="local_mall" />
             </q-item-section>
             <q-item-section>
               {{ $t('community_mall.communitymall') }}

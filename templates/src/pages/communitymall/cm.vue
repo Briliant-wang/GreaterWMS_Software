@@ -142,7 +142,7 @@
       </q-table>
     </transition>
     <q-dialog v-model="payFrom1">
-      <q-card>
+      <q-card style="min-width: 600px">
         <q-card-section style="width: 600px;height: 60px;background-color: #4C5875">
           <q-card-actions align="center">
             <p style="color: white;margin: 0;padding: 0;font-size: 20px">
@@ -184,7 +184,7 @@
       </q-card>
     </q-dialog>
     <q-dialog v-model="payFrom2">
-      <q-card>
+      <q-card style="min-width: 600px">
         <q-card-section style="width: 600px;height: 60px;background-color: #4C5875">
           <q-card-actions align="center">
             <p style="color: white;margin: 0;padding: 0;font-size: 20px">

@@ -223,7 +223,12 @@ export default {
       paypal: 'PayPal'
     },
     equipment: {
-      buyequipment: 'Buy Equipment'
+      buyequipment: 'Buy Equipment',
+      price: 'Price',
+      details: 'Details >',
+      salesvolume: 'Sales Volume:',
+      quantity: 'Quantity: ',
+      addtocart: 'Add To Cart'
     }
   },
   goods: {

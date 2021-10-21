@@ -225,7 +225,12 @@ export default {
       paypal: 'PayPal'
     },
     equipment: {
-      buyequipment: '設備を買う'
+      buyequipment: '設備を買う',
+      price: '価格',
+      details: '詳細を表示 >',
+      salesvolume: '販売量:',
+      quantity: '数: ',
+      addtocart: 'カートに入る'
     }
   },
   goods: {

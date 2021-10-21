@@ -439,12 +439,12 @@ const routes = [
             path: 'cm',
             name: 'cm',
             component: () => import('pages/communitymall/cm.vue')
+          },
+          {
+            path: 'equipment',
+            name: 'equipment',
+            component: () => import('pages/communitymall/equipment.vue')
           }
-          // {
-          //   path: 'equipment',
-          //   name: 'equipment',
-          //   component: () => import('pages/communitymall/equipment.vue')
-          // }
         ]
       }
     ]
