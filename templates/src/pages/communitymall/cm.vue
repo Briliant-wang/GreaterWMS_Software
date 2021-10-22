@@ -9,7 +9,7 @@
       >
         <template v-slot:top >
           <q-card flat :style="{height:height}">
-            <q-card-section horizontal :style="{width:width}" style="height:15%; background-color: #4C5875;font-size: 16px">
+            <q-card-section horizontal :style="{width:width}" style="height:10%; background-color: #4C5875;font-size: 16px">
               <q-card-actions class="col-2" align="center">
                 <div>
                   <p style="color: white;margin: 0;padding: 0">
@@ -60,7 +60,7 @@
             </q-card-section>
             <q-separator></q-separator>
             <!--            第二行-->
-            <q-card-section horizontal style="height: 200px;font-size: 16px">
+            <q-card-section horizontal style="height: 32%;font-size: 16px">
               <q-card-actions class="col-2" align="center" style="background-color: #DBDEE3">
                 <div>{{$t('community_mall.cm.basicuser')}}</div>
               </q-card-actions>
@@ -87,7 +87,7 @@
             </q-card-section>
             <q-separator></q-separator>
             <!--            第三行-->
-            <q-card-section horizontal style="height: 200px;font-size: 16px">
+            <q-card-section horizontal style="height: 32%;font-size: 16px">
               <q-card-actions class="col-2" align="center" style="background-color: #DBDEE3">
                 <div>{{$t('community_mall.cm.limitedusers')}}</div>
               </q-card-actions>
@@ -112,7 +112,7 @@
               </q-card-actions>
             </q-card-section>
             <q-separator></q-separator>
-            <q-card-section horizontal style="height: 200px;font-size: 16px">
+            <q-card-section horizontal style="height: 32%;font-size: 16px">
               <q-card-actions class="col-2" align="center" style="background-color: #DBDEE3">
                 <div>{{$t('community_mall.cm.unlimitedusers')}}</div>
               </q-card-actions>
