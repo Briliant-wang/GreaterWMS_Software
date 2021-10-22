@@ -13,7 +13,7 @@
             <q-card class="col-4" style="width: 22%;height: 40%;margin-left: 2%;margin-top: 1%">
               <q-card-section>
                 <div class="text-h6" style="text-align: center">
-                  <p style="font-size: 28px;font-weight:Bold">
+                  <p style="font-size: 140%;font-weight:Bold">
                     斑马DS4208SR扫描枪
                   </p>
                 </div>
@@ -21,7 +21,7 @@
                   智能扫描 自动感应 抗摔性强 手感舒适
                 </div>
                 <div align="center" style="padding-top: 26px">
-                  <img src="/statics/communitymall/eq.png" style="height:141px;width: 208px">
+                  <q-img src="statics/communitymall/eq.png" style="width: 60%" />
                 </div>
               </q-card-section>
               <q-card-actions align="center" style="background-color: #4C5875">
@@ -33,7 +33,7 @@
             <q-card class="col-4" style="width: 22%;height: 40%;margin-left: 2%;margin-top: 1%">
               <q-card-section>
                 <div class="text-h6" style="text-align: center">
-                  <p style="font-size: 28px;font-weight:Bold">
+                  <p style="font-size: 140%;font-weight:Bold">
                     斑马DS4208SR扫描枪
                   </p>
                 </div>
@@ -41,7 +41,7 @@
                   智能扫描 自动感应 抗摔性强 手感舒适
                 </div>
                 <div align="center" style="padding-top: 26px">
-                  <img src="/statics/communitymall/eq.png" style="height:141px;width: 208px">
+                  <q-img src="statics/communitymall/eq.png" style="width: 60%" />
                 </div>
               </q-card-section>
               <q-card-actions align="center" style="background-color: #4C5875">
@@ -53,7 +53,7 @@
             <q-card class="col-4" style="width: 22%;height: 40%;margin-left: 2%;margin-top: 1%">
               <q-card-section>
                 <div class="text-h6" style="text-align: center">
-                  <p style="font-size: 28px;font-weight:Bold">
+                  <p style="font-size: 140%;font-weight:Bold">
                     斑马DS4208SR扫描枪
                   </p>
                 </div>
@@ -61,7 +61,7 @@
                   智能扫描 自动感应 抗摔性强 手感舒适
                 </div>
                 <div align="center" style="padding-top: 26px">
-                  <img src="/statics/communitymall/eq.png" style="height:141px;width: 208px">
+                  <q-img src="statics/communitymall/eq.png" style="width: 60%" />
                 </div>
               </q-card-section>
               <q-card-actions align="center" style="background-color: #4C5875">
@@ -73,7 +73,7 @@
             <q-card class="col-4" style="width: 22%;height: 40%;margin-left: 2%;margin-top: 1%">
               <q-card-section>
                 <div class="text-h6" style="text-align: center">
-                  <p style="font-size: 28px;font-weight:Bold">
+                  <p style="font-size: 140%;font-weight:Bold">
                     斑马DS4208SR扫描枪
                   </p>
                 </div>
@@ -81,7 +81,7 @@
                   智能扫描 自动感应 抗摔性强 手感舒适
                 </div>
                 <div align="center" style="padding-top: 26px">
-                  <img src="/statics/communitymall/eq.png" style="height:141px;width: 208px">
+                  <q-img src="statics/communitymall/eq.png" style="width: 60%" />
                 </div>
               </q-card-section>
               <q-card-actions align="center" style="background-color: #4C5875">
@@ -93,7 +93,7 @@
             <q-card class="col-4" style="width: 22%;height: 40%;margin-left: 2%;margin-top: 1%" >
               <q-card-section>
                 <div class="text-h6" style="text-align: center">
-                  <p style="font-size: 28px;font-weight:Bold">
+                  <p style="font-size: 140%;font-weight:Bold">
                     斑马DS4208SR扫描枪
                   </p>
                 </div>
@@ -101,7 +101,7 @@
                   智能扫描 自动感应 抗摔性强 手感舒适
                 </div>
                 <div align="center" style="padding-top: 26px">
-                  <img src="/statics/communitymall/eq.png" style="height:141px;width: 208px">
+                  <q-img src="statics/communitymall/eq.png" style="width: 60%" />
                 </div>
               </q-card-section>
               <q-card-actions align="center" style="background-color: #4C5875">
@@ -113,7 +113,7 @@
             <q-card class="col-4" style="width: 22%;height: 40%;margin-left: 2%;margin-top: 1%">
               <q-card-section>
                 <div class="text-h6" style="text-align: center">
-                  <p style="font-size: 28px;font-weight:Bold">
+                  <p style="font-size: 140%;font-weight:Bold">
                     斑马DS4208SR扫描枪
                   </p>
                 </div>
@@ -121,7 +121,7 @@
                   智能扫描 自动感应 抗摔性强 手感舒适
                 </div>
                 <div align="center" style="padding-top: 26px">
-                  <img src="/statics/communitymall/eq.png" style="height:141px;width: 208px">
+                  <q-img src="statics/communitymall/eq.png" style="width: 60%" />
                 </div>
               </q-card-section>
               <q-card-actions align="center" style="background-color: #4C5875">
