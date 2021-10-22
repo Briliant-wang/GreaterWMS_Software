@@ -9,7 +9,7 @@
       >
         <template v-slot:top >
           <q-card flat :style="{height:height}">
-            <q-card-section horizontal :style="{width:width}" style="height:80px; background-color: #4C5875;font-size: 16px">
+            <q-card-section horizontal :style="{width:width}" style="height:15%; background-color: #4C5875;font-size: 16px">
               <q-card-actions class="col-2" align="center">
                 <div>
                   <p style="color: white;margin: 0;padding: 0">
@@ -106,7 +106,7 @@
               </q-card-actions>
               <q-separator vertical></q-separator>
               <q-card-actions class="col-2" align="center">
-                <q-btn color="red" style="width: 140px;height: 48px;font-size: 16px" @click="payFrom1 = true">
+                <q-btn color="red" style="width: 140px;height: 48px;font-size: 16px" @click="open">
                   {{$t('community_mall.cm.buynow')}}
                 </q-btn>
               </q-card-actions>
@@ -131,7 +131,7 @@
               </q-card-actions>
               <q-separator vertical></q-separator>
               <q-card-actions class="col-2" align="center">
-                <q-btn color="red" style="width: 140px;height: 48px;font-size: 16px" @click="payFrom2 = true">
+                <q-btn color="red" style="width: 140px;height: 48px;font-size: 16px" @click="open2">
                   {{$t('community_mall.cm.buynow')}}
                 </q-btn>
               </q-card-actions>
@@ -244,6 +244,9 @@ export default {
   methods: {
     open () {
       window.open('https://www.56yhz.com/')
+    },
+    open2 () {
+      window.open('https://s.click.taobao.com/t?e=m%3D2%26s%3DMzMu%2FHKbwOlw4vFB6t2Z2ueEDrYVVa64Dne87AjQPk9yINtkUhsv0DyQlxakAd0P1CIF5vDaM198NL6699pKKym36gfsUjqbMPSskuId7r4qU4Ko02Q2Qo2X0110zJ5zgvUNyyJS1KL3%2BWMkG3VUs3iDi2ABgqxupKCoIsJ%2FFSbGkLzr5KaHAbfqK1v6Bu2O&union_lens=lensId%3AOPT%401634865570%400b5dc12f_9f1e_17ca594e23c_5492%4001')
     }
   },
   mounted () {
