@@ -227,7 +227,40 @@ export default {
     addupload: 'アップロード'
   },
   community_mall: {
-    communitymall: 'コミュニティ'
+    communitymall: 'コミュニティ',
+    cm: {
+      buySoftware: 'ソフトを買う',
+      userlevel: 'ユーザレベル',
+      receivingvolume: '受入量（条）',
+      deliveringamount: '出荷量（条）',
+      users: '使用人数',
+      useequipment: '使用設備（台）',
+      purchasemethod: '買い方',
+      basicuser: 'ベースユーザ',
+      limitedusers: '限定ユーザー',
+      unlimitedusers: '無限ユーザ',
+      unlimited: '制限なし',
+      noneedtobuy: '買う必要がない',
+      buynow: '即座に買う',
+      purchasecontent: '購入内容：',
+      lul: '制限ユーザレベル',
+      ulul: '無制限ユーザレベル',
+      rasv: '（出荷量:1000条）',
+      paymentamount: '支払い金額：',
+      paymentmethods: '支払い方法：',
+      unlimiteds: '(制限なし)',
+      wechat: 'WeChat',
+      alipay: 'Alipay',
+      paypal: 'PayPal'
+    },
+    equipment: {
+      buyequipment: '設備を買う',
+      price: '価格',
+      details: '詳細を表示 >',
+      salesvolume: '販売量:',
+      quantity: '数: ',
+      addtocart: 'カートに入る'
+    }
   },
   goods: {
     goods_list: '製品リスト',

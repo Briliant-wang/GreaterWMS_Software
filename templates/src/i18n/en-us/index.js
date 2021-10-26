@@ -225,7 +225,40 @@ export default {
     addupload: 'Add Upload'
   },
   community_mall: {
-    communitymall: 'Community Mall'
+    communitymall: 'Community Mall',
+    cm: {
+      buySoftware: 'Buy Software',
+      userlevel: 'User Level',
+      receivingvolume: 'Receiving Volume (bar)',
+      deliveringamount: 'Delivering Amount (bar)',
+      users: 'Users',
+      useequipment: 'Use Equipment（piece）',
+      purchasemethod: 'Purchase Method',
+      basicuser: 'Basic User',
+      limitedusers: 'Limited Users',
+      unlimitedusers: 'Unlimited Users',
+      unlimited: 'Unlimited',
+      noneedtobuy: 'Free',
+      buynow: 'Buy Now',
+      purchasecontent: 'Purchase Content：',
+      lul: 'Limited User Level',
+      ulul: 'Unlimited User Level',
+      rasv: '（Receipt and shipment volume:1000 bar）',
+      paymentamount: 'Payment Amount：',
+      paymentmethods: 'Payment Methods：',
+      unlimiteds: '（unlimited）',
+      wechat: 'WeChat',
+      alipay: 'Alipay',
+      paypal: 'PayPal'
+    },
+    equipment: {
+      buyequipment: 'Buy Equipment',
+      price: 'Price',
+      details: 'Details >',
+      salesvolume: 'Sales Volume:',
+      quantity: 'Quantity: ',
+      addtocart: 'Add To Cart'
+    }
   },
   goods: {
     goods_list: 'Goods List',

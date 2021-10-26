@@ -227,7 +227,40 @@ export default {
     addupload: '新增上傳'
   },
   community_mall: {
-    communitymall: '社區商城'
+    communitymall: '社區商城',
+    cm: {
+      buySoftware: '購買軟件',
+      userlevel: '用戶等級',
+      receivingvolume: '收貨量（條）',
+      deliveringamount: '發貨量（條）',
+      users: '使用人數',
+      useequipment: '使用設備 （台）',
+      purchasemethod: '購買方式',
+      basicuser: '基礎用戶',
+      limitedusers: '限量用戶',
+      unlimitedusers: '無限量用戶',
+      unlimited: '無限制',
+      noneedtobuy: '無需購買',
+      buynow: '立即購買',
+      purchasecontent: '購買内容：',
+      lul: '限量用戶等級',
+      ulul: '無限量用戶等級',
+      rasv: '（收發貨量:1000條）',
+      paymentamount: '支付金額：',
+      paymentmethods: '支付方式：',
+      unlimiteds: '（無限制）',
+      wechat: '微信',
+      alipay: '支付宝',
+      paypal: 'PayPal'
+    },
+    equipment: {
+      buyequipment: '購買設備',
+      price: '價格',
+      details: '查看詳情 >',
+      salesvolume: '銷量:',
+      quantity: '數量: ',
+      addtocart: '加入購物車'
+    }
   },
   goods: {
     goods_list: '商品列表',

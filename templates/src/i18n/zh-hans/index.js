@@ -232,7 +232,40 @@ export default {
     download: '下载'
   },
   community_mall: {
-    communitymall: '社区商城'
+    communitymall: '社区商城',
+    cm: {
+      buySoftware: '购买软件',
+      userlevel: '用户等级',
+      receivingvolume: '收货量（条）',
+      deliveringamount: '发货量（条）',
+      users: '使用人数',
+      useequipment: '使用设备（台）',
+      purchasemethod: '购买方式',
+      basicuser: '基础用户',
+      limitedusers: '限量用户',
+      unlimitedusers: '无限量用户',
+      unlimited: '无限制',
+      noneedtobuy: '无需购买',
+      buynow: '立即购买',
+      purchasecontent: '购买内容：',
+      lul: '限量用户等级',
+      ulul: '无限量用户等级',
+      rasv: '（收发货量:1000条）',
+      paymentamount: '支付金额：',
+      paymentmethods: '支付方式：',
+      unlimiteds: '（无限制）',
+      wechat: '微信',
+      alipay: '支付宝',
+      paypal: 'PayPal'
+    },
+    equipment: {
+      buyequipment: '购买设备',
+      price: '价格',
+      details: '查看详情 >',
+      salesvolume: '销量:',
+      quantity: '数量: ',
+      addtocart: '加入购物车'
+    }
   },
   goods: {
     goods_list: '商品列表',
