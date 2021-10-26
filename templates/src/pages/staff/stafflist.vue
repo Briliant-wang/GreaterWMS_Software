@@ -58,7 +58,7 @@
                           v-model="editFormData.staff_name"
                           :label="$t('staff.view_staff.staff_name')"
                           autofocus
-                          :rules="[ val => val && val.length > 0 || 'Please Enter The Staff Name']"
+                          :rules="[ val => val && val.length > 0 || error1]"
                  />
                </q-td>
              </template>
@@ -77,7 +77,7 @@
                            transition-show="scale"
                            transition-hide="scale"
                            :label="$t('staff.view_staff.staff_type')"
-                           :rules="[ val => val && val.length > 0 || 'Please Enter The Staff Type']"
+                           :rules="[ val => val && val.length > 0 || error2]"
                  />
                </q-td>
              </template>
@@ -93,7 +93,7 @@
                {{ props.row.update_time }}
              </q-td>
              <template v-if="!editMode">
-               <q-td key="action" :props="props" style="width: 100px">
+               <q-td key="action" :props="props" style="width: 240px">
                  <q-btn v-show="$q.localStorage.getItem('staff_type') !== 'Supplier' &&
                                 $q.localStorage.getItem('staff_type') !== 'Customer' &&
                                 $q.localStorage.getItem('staff_type') !== 'Inbound' &&
@@ -114,6 +114,11 @@
                         round flat push color="dark" icon="delete" @click="deleteData(props.row.id)">
                    <q-tooltip content-class="bg-amber text-black shadow-4" :offset="[10, 10]" content-style="font-size: 12px">
                     {{ $t('delete') }}
+                  </q-tooltip>
+                 </q-btn>
+                 <q-btn color="teal" :label="$t('contact')" icon="contacts" @click="ChatWith(props.row.staff_name)">
+                   <q-tooltip content-class="bg-amber text-black shadow-4" :offset="[10, 10]" content-style="font-size: 12px">
+                    {{ $t('sendmessage') }}
                   </q-tooltip>
                  </q-btn>
                </q-td>
@@ -170,7 +175,7 @@
                     v-model="newFormData.staff_name"
                     :label="$t('staff.view_staff.staff_name')"
                     autofocus
-                    :rules="[ val => val && val.length > 0 || 'Please Enter The Staff Name']"
+                    :rules="[ val => val && val.length > 0 || error1]"
                     @keyup.enter="newDataSubmit()"/>
            <q-select dense
                      outlined
@@ -180,7 +185,7 @@
                      transition-show="scale"
                      transition-hide="scale"
                      :label="$t('staff.view_staff.staff_type')"
-                     :rules="[ val => val && val.length > 0 || 'Please Enter The Staff Type']"
+                     :rules="[ val => val && val.length > 0 || error2]"
                      @keyup.enter="newDataSubmit()"
                      style="margin-top: 5px"/>
          </q-card-section>
@@ -305,7 +310,9 @@ export default {
       chat: false,
       chat_list: [],
       chat_text: '',
-      chat_next: null
+      chat_next: null,
+      error1: this.$t('staff.view_staff.error1'),
+      error2: this.$t('staff.view_staff.error2')
     }
   },
   methods: {

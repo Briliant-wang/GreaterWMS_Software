@@ -1,7 +1,7 @@
 <template>
-  <q-page class="flex">
-    <lottie-web-cimo v-show="device === 2" ref="lottie_web" style="width: 40%; max-width: 70%"/>
-    <div class="q-pa-md" v-show="device !== 2" :style="{height: height,width: width}">
+  <q-page :class="{'flex': device === 2, 'flex flex-center': device !== 2,}">
+    <lottie-web-cimo v-show="device !== 2" ref="lottie_web" style="width: 40%; max-width: 70%"/>
+    <div v-show="device === 2" :style="{height: height,width: width}">
       <div class="q-gutter-x-md q-gutter-y-xl">
         <q-card flat>
         <q-card-section horizontal>
@@ -93,9 +93,9 @@ export default {
       }
     })
     if (_this.$q.platform.is.electron) {
-      _this.height = String(_this.$q.screen.height - 290) + 'px'
+      _this.height = String(_this.$q.screen.height) + 'px'
     } else {
-      _this.height = _this.$q.screen.height - 290 + '' + 'px'
+      _this.height = _this.$q.screen.height + '' + 'px'
     }
   }
 }
